@@ -210,13 +210,13 @@ nav {
 
 #sidebar_container { 
   float: right;
-  width: 224px;
+  width: 321px;
   padding: 20px 0 0 0;
 }
 
 .sidebar { 
   float: right;
-  width: 200px;
+  width: 320px;
   margin: 0 0 17px 0;
   background: #222;
   border: 1px solid #444;
@@ -267,7 +267,7 @@ nav {
 
 .content { 
   text-align: left;
-  width: 630px;
+  width: 530px;
   margin: 0 0 15px 0;
   float: left;
   font-size: 120%;
