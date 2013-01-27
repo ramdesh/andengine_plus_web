@@ -1,3 +1,6 @@
+<?php session_start(); 
+include_once 'controllers/controllers.php';
+?>
 <!DOCTYPE HTML>
 <html>
 
@@ -11,11 +14,14 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!-- modernizr enables HTML5 elements and feature detects -->
 <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript">
   $(document).ready(function()
 		  {   
-		          $('form').ajaxForm({
+		          $('#resource_upload').ajaxForm({
 		          beforeSubmit: function() {
 		              $('#results').html('Submitting...');
 		          },
@@ -37,7 +43,7 @@
 				<div id="logo_text">
 					<!-- class="logo_colour", allows you to change the colour of the text -->
 					<h1>
-						<a href="index.html">AndEngine<span class="logo_colour">+Web</span>
+						<a href="index.php">AndEngine<span class="logo_colour">+Web</span>
 						</a>
 					</h1>
 					<h2>The easiest way to build AndEngine games</h2>
@@ -79,15 +85,15 @@
 					<form id="resource_upload" action="controllers/resource_upload.php"
 						method="post" enctype="multipart/form-data">
 						<div class="form_settings">
-							<input type="file" name="resourceFile">
-							<input class="submit" type="submit" name="file_uploaded" value="Upload" />
+							<input type="file" name="resourceFile"> <input class="submit"
+								type="submit" name="file_uploaded" value="Upload" />
 						</div>
 					</form>
-
+					<div id="results" class="results"></div>
 				</div>
 				<div class="sidebar">
 					<h3>Useful Links</h3>
-					
+
 				</div>
 			</div>
 			<div class="content">
@@ -96,16 +102,14 @@
 		</div>
 		<footer>
 			<p>
-				Copyright &copy; AndEngine+Web | <a
-					href="http://rdeshapriya.com">design from rdeshapriya.com</a>
+				Copyright &copy; AndEngine+Web | <a href="http://rdeshapriya.com">design
+					from rdeshapriya.com</a>
 			</p>
 		</footer>
 	</div>
 	<p>&nbsp;</p>
 	<!-- javascript at the bottom for fast page loading -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-	<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+
 	<script type="text/javascript">
     $(document).ready(function() {
       $('ul.sf-menu').sooperfish();

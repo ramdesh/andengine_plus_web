@@ -1,12 +1,12 @@
 <?php
 /**
- * @name dbAccess
- * @package IntelliRadio.dbAccess
+ * @name Database
+ * @package Andengine_plus_web.controllers
  * @author Ramindu Deshapriya
  * 
  * @desc Class to handle database connections
  */
-class dbAccess {
+class Database {
 	protected static $dParams = array(
 						'host' 		=> 'localhost',
 						'user' 		=> 'root',
@@ -51,14 +51,14 @@ class dbAccess {
 		
 	}
 	final public static function getInstance() {
-		if ( is_null(dbAccess::$dbInstance) ) {
-			dbAccess::$dbInstance = new dbAccess(	dbAccess::$dParams['host'], 
-													dbAccess::$dParams['user'], 
-													dbAccess::$dParams['password'], 
-													dbAccess::$dParams['database']
+		if ( is_null(Database::$dbInstance) ) {
+			Database::$dbInstance = new Database(	Database::$dParams['host'], 
+													Database::$dParams['user'], 
+													Database::$dParams['password'], 
+													Database::$dParams['database']
 												);
 		}
-		return dbAccess::$dbInstance;
+		return Database::$dbInstance;
 		
 	}
 	public function setQuery($query, $offset = 0, $limit = 0)
