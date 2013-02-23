@@ -27,7 +27,7 @@ include_once 'controllers/controllers.php';
 		          },
 		          success: function(data) {
 		              var $out = $('#results');
-		              $out.html('Your results:');
+		              $out.html('Upload status:');
 		              $out.append('<div><pre>'+ data +'</pre></div>');
 		          }
 		      });
@@ -92,7 +92,7 @@ include_once 'controllers/controllers.php';
 					<div id="results" class="results"></div>
 				</div>
 				<div class="sidebar">
-					<h3>Useful Links</h3>
+					<h3>Behaviors</h3>
 
 				</div>
 			</div>
