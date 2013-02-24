@@ -10,29 +10,29 @@ if ( (($_FILES["resourceFile"]["type"] == "image/gif")
 {
 	if ($_FILES["resourceFile"]["error"] > 0)
 	{
-		echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
+		echo "error";
 	}
 	else
 	{
-		echo "Upload: " . $_FILES["resourceFile"]["name"] . "<br>" .
+		/*echo "Upload: " . $_FILES["resourceFile"]["name"] . "<br>" .
 			 "Type: " . $_FILES["resourceFile"]["type"] . "<br>".
 			 "Size: " . ($_FILES["resourceFile"]["size"] / 1024) . " kB<br>".
-			 "Temp file: " . $_FILES["resourceFile"]["tmp_name"] . "<br>";
+			 "Temp file: " . $_FILES["resourceFile"]["tmp_name"] . "<br>";*/
 
-		if (file_exists("upload/" . $_FILES["resourceFile"]["name"]))
+		if (file_exists("resources/" . $_FILES["resourceFile"]["name"]))
 		{
-			echo $_FILES["resourceFile"]["name"] . " already exists. ";
+			echo "error";
 		}
 		else
 		{
 			move_uploaded_file($_FILES["resourceFile"]["tmp_name"],
 			"../resources/" . $_FILES["resourceFile"]["name"]);
-			echo "Stored in: " . "resources/" . $_FILES["file"]["name"];
+			echo "resources/" . $_FILES["resourceFile"]["name"];
 		}
 	}
 }
 else
 {
-	echo "Invalid file";
+	echo "error";
 }
 ?>

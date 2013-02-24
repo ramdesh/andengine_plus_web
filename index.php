@@ -27,8 +27,8 @@ include_once 'controllers/controllers.php';
 		          },
 		          success: function(data) {
 		              var $out = $('#results');
-		              $out.html('Upload status:');
-		              $out.append('<div><pre>'+ data +'</pre></div>');
+		              $out.html('<div><pre>'+data+'</pre></div>');
+		              $out.append('<div><img src="'+ data +'" / ></div>');
 		          }
 		      });
 		  });    
