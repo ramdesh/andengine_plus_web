@@ -12,26 +12,37 @@ include_once 'controllers/controllers.php';
 	content="andengine, android, android games, 2d games" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css"
+	href="css/ui-darkness/jquery-ui-1.10.1.custom.css" />
 <!-- modernizr enables HTML5 elements and feature detects -->
 <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.js"></script><script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
 <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript">
+	//Form upload function
   $(document).ready(function()
 		  {   
 		          $('#resource_upload').ajaxForm({
 		          beforeSubmit: function() {
-		              $('#results').html('Submitting...');
+		              $('#results').html('Uploading...');
 		          },
 		          success: function(data) {
 		              var $out = $('#results');
 		              $out.html('<div><pre>'+data+'</pre></div>');
-		              $out.append('<div><img src="'+ data +'" / ></div>');
+		              $out.append('<div id="draggable" class="ui-widget-content"><img src="'+ data +'" / ></div>');
+		              //Function for draggables 
+		              $(function() {
+		            	    $( "#draggable" ).draggable();
+		            	  });
 		          }
 		      });
-		  });    
+		  });
+ 
+  $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });   
 		  	
   </script>
 </head>
@@ -53,26 +64,6 @@ include_once 'controllers/controllers.php';
 				<div id="menu_container">
 					<ul class="sf-menu" id="nav">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="examples.html">Examples</a></li>
-						<li><a href="page.html">A Page</a></li>
-						<li><a href="another_page.html">Another Page</a></li>
-						<li><a href="#">Example Drop Down</a>
-							<ul>
-								<li><a href="#">Drop Down One</a></li>
-								<li><a href="#">Drop Down Two</a>
-									<ul>
-										<li><a href="#">Sub Drop Down One</a></li>
-										<li><a href="#">Sub Drop Down Two</a></li>
-										<li><a href="#">Sub Drop Down Three</a></li>
-										<li><a href="#">Sub Drop Down Four</a></li>
-										<li><a href="#">Sub Drop Down Five</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Drop Down Three</a></li>
-								<li><a href="#">Drop Down Four</a></li>
-								<li><a href="#">Drop Down Five</a></li>
-							</ul>
-						</li>
 						<li><a href="contact.php">Contact Us</a></li>
 					</ul>
 				</div>
@@ -90,6 +81,7 @@ include_once 'controllers/controllers.php';
 						</div>
 					</form>
 					<div id="results" class="results"></div>
+					<div id="resource_view" class="resource_view"></div>
 				</div>
 				<div class="sidebar">
 					<h3>Behaviors</h3>
@@ -108,12 +100,5 @@ include_once 'controllers/controllers.php';
 		</footer>
 	</div>
 	<p>&nbsp;</p>
-	<!-- javascript at the bottom for fast page loading -->
-
-	<script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
 </body>
 </html>
