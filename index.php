@@ -17,13 +17,18 @@ include_once 'controllers/controllers.php';
 <!-- modernizr enables HTML5 elements and feature detects -->
 <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.js"></script><script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.js"></script>
+<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
 <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript">
 	//Form upload function
   $(document).ready(function()
-		  {   
+		  {   		
+	  				//load sooperfish menu
+				  $('ul.sf-menu').sooperfish();
+				  //load JQuery UI draggables
+			      $("#draggable" ).draggable();
 		          $('#resource_upload').ajaxForm({
 		          beforeSubmit: function() {
 		              $('#results').html('Uploading...');
@@ -31,7 +36,7 @@ include_once 'controllers/controllers.php';
 		          success: function(data) {
 		              var $out = $('#results');
 		              $out.html('<div><pre>'+data+'</pre></div>');
-		              $out.append('<div id="draggable" class="ui-widget-content"><img src="'+ data +'" / ></div>');
+		              $out.append('<div id="draggable-<?php echo rand(); ?>" class="ui-widget-content"><img src="'+ data +'" / ></div>');
 		              //Function for draggables 
 		              $(function() {
 		            	    $( "#draggable" ).draggable();
@@ -40,9 +45,6 @@ include_once 'controllers/controllers.php';
 		      });
 		  });
  
-  $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });   
 		  	
   </script>
 </head>
