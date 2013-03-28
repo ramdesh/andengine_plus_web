@@ -537,6 +537,7 @@ ul#nav li a:hover,ul#nav li a:focus {
 
 .screen {
 	border:2px solid;
+	background: #000;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Old Firefox */
 	margin-top: 5px;
