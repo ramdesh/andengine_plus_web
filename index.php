@@ -30,20 +30,25 @@ include_once 'controllers/controllers.php';
 				  $('ul.sf-menu').sooperfish();
 				  //load JQuery UI draggables
 			      $(".draggable" ).draggable();
-		          $('#resource_upload').ajaxForm({
-		          beforeSubmit: function() {
-		              $('#results').html('Uploading...');
-		          },
-		          success: function(data) {
-		              var $out = $('#results');
-		              $out.html('<div><pre>'+data+'</pre></div>');
-		              $out.append('<img id="img-<?php echo rand(); ?>" class="draggable" src="'+ data +'" / ></div>');
-		              //Function for draggables 
-		              $(function() {
-		            	    $( ".draggable" ).draggable();
-		            	  });
-		          }
-		      });
+		          $('#resource_upload').ajaxForm(
+				          {beforeSubmit: function() {
+		              								$('#results').html('Uploading...');
+		          									},
+		          			success: function(data) {
+		              								var $out = $('#results');
+		              								$out.html('<div><pre>'+data+'</pre></div>');
+		              								$out.append('<img id="img-<?php echo rand(); ?>" class="draggable" src="'+ data +'" / ></div>');
+		              								//Function for draggables 
+		              								$(function() {
+		            	    							$( ".draggable" ).draggable();
+		            	  							});
+		          									}
+		      			});
+	      		/*$(function() {
+		      		var position = $('.draggable').position();
+					var $output = $('#resources');
+					$output.html('<p>Left: '+position.left()+', Right: '+position.right());
+	      		});*/		      		
 		  });
  
 		  	
@@ -74,7 +79,7 @@ include_once 'controllers/controllers.php';
 		</header>
 		<div id="site_content">
 			<div id="sidebar_container">
-				<div class="sidebar">
+				<div class="sidebar" id="resources">
 					<h3>Resources</h3>
 					<form id="resource_upload" action="controllers/resource_upload.php"
 						method="post" enctype="multipart/form-data">
@@ -88,6 +93,11 @@ include_once 'controllers/controllers.php';
 				</div>
 				<div class="sidebar">
 					<h3>Behaviors</h3>
+
+				</div>
+				<div class="sidebar">
+					<h3>Save Your Progress</h3>
+						<button class="savebutton" >Save</button>
 
 				</div>
 			</div>
