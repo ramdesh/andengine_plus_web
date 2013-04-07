@@ -186,7 +186,7 @@
 											<header>
 												<h3>Resources</h3>
 												<form id="resource_upload"
-													action="controllers/resource_upload.php" method="post"
+													action="controllers/httprouter.php?function=resource_upload" method="post"
 													enctype="multipart/form-data">
 													<div class="form_settings">
 														<input type="file" name="resourceFile"> <input
