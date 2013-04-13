@@ -5,7 +5,7 @@
  * @author Ramindu
  *
  */
-class Resource {
+class ResourceManager {
 	function resource_upload() {
 		if ( (($_FILES["resourceFile"]["type"] == "image/gif")
 				|| ($_FILES["resourceFile"]["type"] == "image/jpeg")
@@ -41,7 +41,13 @@ class Resource {
 			echo "error";
 		}
 	}
+	/**
+	 * function to check resources in a folder and send them to the front end
+	 */
 	function serve_resources() {
 		
+		foreach(glob('resources/*.*') as $filename){
+			echo '<img src="'.$filename.'" class="draggable" />';
+		}
 	}
 }

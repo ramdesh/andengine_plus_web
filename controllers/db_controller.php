@@ -6,7 +6,7 @@
  * 
  * @desc Class to handle database connections
  */
-class Database {
+class DatabaseManager {
 	protected static $dParams = array(
 						'host' 		=> 'localhost',
 						'user' 		=> 'root',
@@ -51,14 +51,14 @@ class Database {
 		
 	}
 	final public static function getInstance() {
-		if ( is_null(Database::$dbInstance) ) {
-			Database::$dbInstance = new Database(	Database::$dParams['host'], 
-													Database::$dParams['user'], 
-													Database::$dParams['password'], 
-													Database::$dParams['database']
+		if ( is_null(DatabaseManager::$dbInstance) ) {
+			DatabaseManager::$dbInstance = new DatabaseManager(	DatabaseManager::$dParams['host'], 
+													DatabaseManager::$dParams['user'], 
+													DatabaseManager::$dParams['password'], 
+													DatabaseManager::$dParams['database']
 												);
 		}
-		return Database::$dbInstance;
+		return DatabaseManager::$dbInstance;
 		
 	}
 	public function setQuery($query, $offset = 0, $limit = 0)

@@ -1,3 +1,9 @@
+<?php 
+global $global;
+require_once('controllers/controllers.php');
+$global['resource_manager'] = new ResourceManager();
+$global['db'] = DatabaseManager::getInstance();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -146,30 +152,12 @@
 											<div class="row">
 												<div class="6u">
 													<section class="is is-pair-one">
-														<header>
-															<h2>Magna pulvinar tempus</h2>
-														</header>
-														<a href="http://fav.me/d5uvswq" class="image image-full"><img
-															src="images/pic05.jpg" alt="" /></a>
-														<p>Rutrum bibendum. Proin pellentesque diam non ligula
-															commodo tempor. Vivamus eget urna nibh. Curabitur non
-															fringilla nisl. Donec accumsan interdum nisi, quis
-															tempus.</p>
-														<a href="#" class="button button-style1">More</a>
+														
 													</section>
 												</div>
 												<div class="6u">
 													<section class="is is-pair-two">
-														<header>
-															<h2>Magna pulvinar tempus</h2>
-														</header>
-														<a href="http://fav.me/d5qdf2o" class="image image-full"><img
-															src="images/pic06.jpg" alt="" /></a>
-														<p>Rutrum bibendum. Proin pellentesque diam non ligula
-															commodo tempor. Vivamus eget urna nibh. Curabitur non
-															fringilla nisl. Donec accumsan interdum nisi, quis
-															tempus.</p>
-														<a href="#" class="button button-style1">More</a>
+														
 													</section>
 												</div>
 											</div>
@@ -195,7 +183,9 @@
 													</div>
 												</form>
 												<div id="results" class="results"></div>
-												<div id="resource_view" class="resource_view"></div>
+												<div id="resource_view" class="resource_view">
+												<?php $global['resource_manager']->serve_resources() ?>
+												</div>
 										</section>
 										<section class="is">
 											<header>
