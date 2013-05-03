@@ -51,7 +51,7 @@ $global['db'] = DatabaseManager::getInstance();
 												var $out = $('#results');
 												$out.html('<div><pre>' + data
 														+ '</pre></div>');
-												$out.append('<img id="img-<?php echo rand(); ?>" class="draggable" src="'+ data
+												$out.append('<img id="img-<?php echo $global['resource_manager']->generate_resourceid() ?>" class="draggable" src="'+ data
 																+ '" / ></div>');
 												//Function for draggables 
 												$(function() {

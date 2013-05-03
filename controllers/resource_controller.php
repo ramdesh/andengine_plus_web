@@ -6,6 +6,7 @@
  *
  */
 class ResourceManager {
+	var $_resource_ids = array();
 	function resource_upload() {
 		if ( (($_FILES["resourceFile"]["type"] == "image/gif")
 				|| ($_FILES["resourceFile"]["type"] == "image/jpeg")
@@ -45,9 +46,18 @@ class ResourceManager {
 	 * function to check resources in a folder and send them to the front end
 	 */
 	function serve_resources() {
-		
 		foreach(glob('resources/*.*') as $filename){
-			echo '<img src="'.$filename.'" class="draggable" />';
+			
+			echo '<img src="'.$filename.'" class="draggable" id="'.$this->generate_resourceid().'" />';
 		}
+	}
+	/**
+	 * Function to generate a random id for a resource
+	 * @return string
+	 */
+	function generate_resourceid() {
+		$imgid = 'img-'.rand();
+		$this->_resource_ids[] = $imgid;
+		return $imgid;
 	}
 }
