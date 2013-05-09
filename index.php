@@ -21,6 +21,7 @@ $global['db'] = DatabaseManager::getInstance();
 <script src="js/init.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.10.1.custom.js"></script>
+<!-- <script type="text/javascript" src="js/andengine_plus_web.js"></script>-->
 <noscript>
 	<link rel="stylesheet" href="css/5grid/core.css" />
 	<link rel="stylesheet" href="css/5grid/core-desktop.css" />
@@ -35,36 +36,29 @@ $global['db'] = DatabaseManager::getInstance();
 <script type="text/javascript">
 	//Form upload function
 	//<div id="draggable-//echo rand(); " class="ui-widget-content">
-	$(document)
-			.ready(
-					function() {
-						//load JQuery UI draggables
-						$(".draggable").draggable();
-						$('#resource_upload')
-								.ajaxForm(
-										{
-											beforeSubmit : function() {
-												$('#results').html(
-														'Uploading...');
-											},
-											success : function(data) {
-												var $out = $('#results');
-												$out.html('<div><pre>' + data
-														+ '</pre></div>');
-												$out.append('<img id="img-<?php echo $global['resource_manager']->generate_resourceid() ?>" class="draggable" src="'+ data
-																+ '" / ></div>');
-												//Function for draggables 
-												$(function() {
-													$(".draggable").draggable();
-												});
-											}
-										});
-						/*$(function() {
-							var position = $('.draggable').position();
-						var $output = $('#resources');
-						$output.html('<p>Left: '+position.left()+', Right: '+position.right());
-						});*/
+ $(document).ready(function() {
+	//load JQuery UI draggables
+	$(".draggable").draggable();
+	$('#resource_upload')
+			.ajaxForm(
+					{
+						beforeSubmit : function() {
+							$('#results').html(
+									'Uploading...');
+						},
+						success : function(data) {
+							var $out = $('#results');
+							$out.html('<div><pre>' + data
+									+ '</pre></div>');
+							$out.append('<img id="img-<?php echo $global['resource_manager']->generate_resourceid() ?>" class="draggable" src="'+ data
+											+ '" / ></div>');
+							//Function for draggables 
+							$(function() {
+								$(".draggable").draggable();
+							});
+						}
 					});
+ });
 </script>
 </head>
 <body class="right-sidebar">
@@ -83,8 +77,7 @@ $global['db'] = DatabaseManager::getInstance();
 							<h1>
 								<a href="#" class="mobileUI-site-name">AndEngine + Web</a>
 							</h1>
-							<span class="byline">The easiest way to build AndEngine
-								games!</span>
+							<span class="byline">The easiest way to build AndEngine games!</span>
 						</div>
 						<!-- /Logo -->
 
@@ -107,8 +100,8 @@ $global['db'] = DatabaseManager::getInstance();
 											</ul></li>
 										<li><a href="#">Nisl tempus</a></li>
 									</ul></li>
-								<li class="current_page_item"><a href="index.html">Game
-										Dev View</a></li>
+								<li class="current_page_item"><a href="index.html">Game Dev View</a>
+								</li>
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="no-sidebar.html">No Sidebar</a></li>
 							</ul>
@@ -140,25 +133,18 @@ $global['db'] = DatabaseManager::getInstance();
 									<!-- Content -->
 									<div id="content">
 										<article class="is is-post">
-											<header class="style1">
-												<h2>Game Development View</h2>
-												<span class="byline">Develop your game using the
-													elements</span>
-											</header>
+											<!-- <header class="style1">
+											</header>-->
 											<div class="screen" style="width: 364px; height: 640px"></div>
 
 										</article>
 										<div class="5grid">
 											<div class="row">
 												<div class="6u">
-													<section class="is is-pair-one">
-														
-													</section>
+													<section class="is is-pair-one"></section>
 												</div>
 												<div class="6u">
-													<section class="is is-pair-two">
-														
-													</section>
+													<section class="is is-pair-two"></section>
 												</div>
 											</div>
 										</div>
@@ -174,8 +160,8 @@ $global['db'] = DatabaseManager::getInstance();
 											<header>
 												<h3>Resources</h3>
 												<form id="resource_upload"
-													action="controllers/httprouter.php?function=resource_upload" method="post"
-													enctype="multipart/form-data">
+													action="controllers/httprouter.php?function=resource_upload"
+													method="post" enctype="multipart/form-data">
 													<div class="form_settings">
 														<input type="file" name="resourceFile"> <input
 															class="submit" type="submit" name="file_uploaded"
@@ -184,8 +170,9 @@ $global['db'] = DatabaseManager::getInstance();
 												</form>
 												<div id="results" class="results"></div>
 												<div id="resource_view" class="resource_view">
-												<?php $global['resource_manager']->serve_resources() ?>
+													<?php $global['resource_manager']->serve_resources() ?>
 												</div>
+										
 										</section>
 										<section class="is">
 											<header>
@@ -261,8 +248,8 @@ $global['db'] = DatabaseManager::getInstance();
 												<div class="row">
 													<div class="12u">
 														<ul class="actions">
-															<li><input type="submit"
-																class="button button-style1" value="Send" /></li>
+															<li><input type="submit" class="button button-style1"
+																value="Send" /></li>
 															<li><input type="reset" class="button button-style2"
 																value="Reset" /></li>
 														</ul>
