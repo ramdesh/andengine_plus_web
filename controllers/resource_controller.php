@@ -7,6 +7,11 @@
  */
 class ResourceManager {
 	var $_resource_ids = array();
+	var $_logger;
+	
+	function __construct() {
+		$this->_logger = new Logger();
+	}
 	function resource_upload() {
 		if ( (($_FILES["resourceFile"]["type"] == "image/gif")
 				|| ($_FILES["resourceFile"]["type"] == "image/jpeg")
@@ -33,6 +38,8 @@ class ResourceManager {
 				{
 					move_uploaded_file($_FILES["resourceFile"]["tmp_name"],
 					"../resources/" . $_FILES["resourceFile"]["name"]);
+					$this->_logger->writeLog(1, __CLASS__, __FUNCTION__, "resource_upload", 
+							array("file"=>"resources/" . $_FILES["resourceFile"]["name"]));
 					echo "resources/" . $_FILES["resourceFile"]["name"];
 				}
 			}

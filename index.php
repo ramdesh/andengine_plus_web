@@ -1,6 +1,7 @@
 <?php 
 global $global;
 require_once('controllers/controllers.php');
+initialize_controllers();
 $global['resource_manager'] = new ResourceManager();
 $global['db'] = DatabaseManager::getInstance();
 ?>
@@ -39,6 +40,13 @@ $global['db'] = DatabaseManager::getInstance();
  $(document).ready(function() {
 	//load JQuery UI draggables
 	$(".draggable").draggable();
+	$( ".screen" ).droppable({
+	      drop: function( event, ui ) {
+	        $( this )
+	          //.addClass( "ui-state-highlight" )
+	          .append("<input type=\"text\" placeholder=\"Enter sprite name here\" class=\"text\" id=\"contact-name\" />");
+	      }
+	    });
 	$('#resource_upload')
 			.ajaxForm(
 					{
@@ -48,13 +56,11 @@ $global['db'] = DatabaseManager::getInstance();
 						},
 						success : function(data) {
 							var $out = $('#results');
-							$out.html('<div><pre>' + data
-									+ '</pre></div>');
-							$out.append('<img id="img-<?php echo $global['resource_manager']->generate_resourceid() ?>" class="draggable" src="'+ data
+							$out.html('<img id="img-<?php echo $global['resource_manager']->generate_resourceid() ?>" class="draggable" src="'+ data
 											+ '" / ></div>');
 							//Function for draggables 
 							$(function() {
-								$(".draggable").draggable();
+								$(".draggable").draggable({snap:".screen"});
 							});
 						}
 					});
@@ -84,26 +90,10 @@ $global['db'] = DatabaseManager::getInstance();
 						<!-- Nav -->
 						<nav id="nav" class="mobileUI-site-nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><span>Dropdown</span>
-									<ul>
-										<li><a href="#">Lorem ipsum</a></li>
-										<li><a href="#">Magna veroeros</a></li>
-										<li><a href="#">Etiam nisl</a></li>
-										<li><span>Sed consequat</span>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Amet consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Sed feugiat</a></li>
-											</ul></li>
-										<li><a href="#">Nisl tempus</a></li>
-									</ul></li>
-								<li class="current_page_item"><a href="index.html">Game Dev View</a>
+								<li><a href="index.php">Home</a></li>
+								<li class="current_page_item"><a href="index.php">Game Dev View</a>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								
 							</ul>
 						</nav>
 						<!-- /Nav -->
@@ -205,7 +195,7 @@ $global['db'] = DatabaseManager::getInstance();
 
 	<!-- Footer Wrapper -->
 	<div id="footer-wrapper" class="wrapper">
-		<div class="title">The Rest Of It</div>
+		<div class="title">What is AndEngine + Web?</div>
 		<div class="5grid-layout">
 			<div class="row">
 				<div class="12u">
@@ -213,11 +203,14 @@ $global['db'] = DatabaseManager::getInstance();
 					<!-- Footer -->
 					<div id="footer">
 						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
+							
 							<p class="byline">
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor
-								mollis nunc in aliquet.<br /> Nam pharetra laoreet imperdiet
-								volutpat etiam consequat feugiat.
+								 'AndEngine + Web' is conceived as a web interface provided to develop AndEngine 
+								 games in a simple drag-and-drop manner, removing the need to install bulky SDKs, 
+								 learn complex programming concepts, or familiarization with the AndEngine framework. 
+								 It aims to provide the power of AndEngine without the trouble of learning a large 
+								 amount of extra concepts, and allows developers to focus on creating games rather 
+								 than on how to create them.
 							</p>
 						</header>
 						<hr />
@@ -272,8 +265,8 @@ $global['db'] = DatabaseManager::getInstance();
 														<section>
 															<h3 class="icon icon-home">Mailing Address</h3>
 															<p>
-																Untitled Corporation<br /> 1234 Somewhere Rd #987<br />
-																Nashville, TN 00000-0000
+																Faculty of Information Technology, University of Moratuwa,
+																Katubedda, Moratuwa.
 															</p>
 														</section>
 													</div>
@@ -293,16 +286,11 @@ $global['db'] = DatabaseManager::getInstance();
 														<section>
 															<h3 class="icon icon-envelope">Email</h3>
 															<p>
-																<a href="#">info@untitled.tld</a>
+																<a href="mailto:rasade88@gmail.com">rasade88@gmail.com</a>
 															</p>
 														</section>
 													</div>
-													<div class="6u">
-														<section>
-															<h3 class="icon icon-phone">Phone</h3>
-															<p>(000) 555-0000</p>
-														</section>
-													</div>
+							
 												</div>
 											</div>
 										</div>
@@ -332,3 +320,12 @@ $global['db'] = DatabaseManager::getInstance();
 
 </body>
 </html>
+
+<?php 
+function initialize_controllers() {
+	global $global;
+	$global['resource_manager'] = new ResourceManager();
+	$global['db'] = DatabaseManager::getInstance();
+	$global['logger'] = new Logger();
+}
+?>

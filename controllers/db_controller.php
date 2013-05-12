@@ -6,6 +6,7 @@
  * 
  * @desc Class to handle database connections
  */
+error_reporting(E_ERROR);
 class DatabaseManager {
 	protected static $dParams = array(
 						'host' 		=> 'localhost',
@@ -51,7 +52,8 @@ class DatabaseManager {
 		
 	}
 	final public static function getInstance() {
-		if ( is_null(DatabaseManager::$dbInstance) ) {
+		global $global;
+		if ( is_null(DatabaseManager::$dbInstance) && is_null($global['db']) ) {
 			DatabaseManager::$dbInstance = new DatabaseManager(	DatabaseManager::$dParams['host'], 
 													DatabaseManager::$dParams['user'], 
 													DatabaseManager::$dParams['password'], 
