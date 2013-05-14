@@ -22,7 +22,7 @@ $global['db'] = DatabaseManager::getInstance();
 <script src="js/init.js"></script>
 <script type="text/javascript" src="js/form.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.10.1.custom.js"></script>
-<!-- <script type="text/javascript" src="js/andengine_plus_web.js"></script>-->
+<script type="text/javascript" src="js/andengine_plus_web.js"></script>
 <noscript>
 	<link rel="stylesheet" href="css/5grid/core.css" />
 	<link rel="stylesheet" href="css/5grid/core-desktop.css" />
@@ -40,13 +40,7 @@ $global['db'] = DatabaseManager::getInstance();
  $(document).ready(function() {
 	//load JQuery UI draggables
 	$(".draggable").draggable();
-	$( ".screen" ).droppable({
-	      drop: function( event, ui ) {
-	        $( this )
-	          //.addClass( "ui-state-highlight" )
-	          .append("<input type=\"text\" placeholder=\"Enter sprite name here\" class=\"text\" id=\"contact-name\" />");
-	      }
-	    });
+	initializeDroppable();
 	$('#resource_upload')
 			.ajaxForm(
 					{
