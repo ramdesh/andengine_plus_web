@@ -15,6 +15,6 @@ function initializeDroppable() {
 	      }
 	    });
 }
-function initializeButtonClickAjax() {
-	
+function save() {
+	var $onScreenElements = $(document).find(".on-screen");
 }
