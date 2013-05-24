@@ -9,4 +9,11 @@ switch($get_param) {
 		$resourceManager = new ResourceManager();
 		$resourceManager->resource_upload();
 		break;
+	case 'sprite_save':
+		$userActionController = new UserController();
+		$position = array();
+		$position['position_left'] = $_POST['position_left'];
+		$position['position_right'] = $_POST['position_right'];
+		$userActionController->saveSpritePosition($_POST['name'], $position, $_POST['resource']);
+		break;
 }

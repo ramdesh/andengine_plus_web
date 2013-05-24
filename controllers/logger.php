@@ -36,6 +36,12 @@ class Logger {
 		$log_object->activity = $activity;
 		$log_object->activity_params = json_encode($activity_params);
 		
-		$this->_logger_db->insertObject('project_log',$log_object);
+		$result = $this->_logger_db->insertObject('project_log',$log_object);
+		if ( $result === false ) {
+			echo "Error saving position of sprite";
+		}
+		else {
+			echo "Success saving sprite position";
+		}
 	}
 }

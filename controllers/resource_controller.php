@@ -55,7 +55,7 @@ class ResourceManager {
 	function serve_resources() {
 		foreach(glob('resources/*.*') as $filename){
 			
-			echo '<img src="'.$filename.'" class="draggable" id="'.$this->generate_resourceid().'" />';
+			echo '<img src="'.$filename.'" class="draggable" id="'.$this->generate_resourceid().'" alt="myImage" />';
 		}
 	}
 	/**

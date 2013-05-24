@@ -20,6 +20,17 @@ function initializeDroppable() {
 		  }
 	    });
 }
-function save() {
-	var $onScreenElements = $(document).find(".on-screen");
+function saveSpritePosition() {
+	$('.on-screen').each( function(index) {
+		var image_name = $(this).attr('alt');
+		var resource_name = $(this).attr('src');
+		var position = $(this).position();
+		$.ajax({
+			url: "http://localhost/andengine_plus_web/controllers/httprouter.php?function=sprite_save",
+			type: "POST",
+			data: {name:image_name, resource:resource_name, position_left:position.left, position_right:position.right}
+		}).done(function(html) {
+			$('#results').append(html);
+		});
+	});
 }

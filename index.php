@@ -2,8 +2,6 @@
 global $global;
 require_once('controllers/controllers.php');
 initialize_controllers();
-$global['resource_manager'] = new ResourceManager();
-$global['db'] = DatabaseManager::getInstance();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -51,7 +49,7 @@ $global['db'] = DatabaseManager::getInstance();
 						success : function(data) {
 							var $out = $('#results');
 							$out.html('<img id="img-<?php echo $global['resource_manager']->generate_resourceid() ?>" class="draggable" src="'+ data
-											+ '" / ></div>');
+											+ '" alt="myImage" / ></div>');
 							//Function for draggables 
 							$(function() {
 								$(".draggable").draggable({snap:".screen"});
@@ -169,7 +167,7 @@ $global['db'] = DatabaseManager::getInstance();
 											<header>
 												<h2>Save Your Progress</h2>
 											</header>
-											<a href="#" class="button button-style1">Save</a>
+											<a href="#" class="button button-style1" onclick="javascript:saveSpritePosition();">Save</a>
 										</section>
 									</div>
 									<!-- /Sidebar -->
@@ -321,5 +319,6 @@ function initialize_controllers() {
 	$global['resource_manager'] = new ResourceManager();
 	$global['db'] = DatabaseManager::getInstance();
 	$global['logger'] = new Logger();
+	$global['user_action'] = new UserController();
 }
 ?>
