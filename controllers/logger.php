@@ -38,7 +38,7 @@ class Logger {
 		
 		$result = $this->_logger_db->insertObject('project_log',$log_object);
 		if ( $result === false ) {
-			echo "Error saving position of sprite";
+			echo "Error saving position of sprite:".print_r($this->_logger_db, true);
 		}
 		else {
 			echo "Success saving sprite position";

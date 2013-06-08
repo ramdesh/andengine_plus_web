@@ -169,6 +169,12 @@ initialize_controllers();
 											</header>
 											<a href="#" class="button button-style1" onclick="javascript:saveSpritePosition();">Save</a>
 										</section>
+                                        <section class="is">
+                                            <header>
+                                                <h2>Build and Download APK</h2>
+                                            </header>
+                                            <a href="#" class="button button-style1" onclick="">Build</a>
+                                        </section>
 									</div>
 									<!-- /Sidebar -->
 
