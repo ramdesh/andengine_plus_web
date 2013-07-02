@@ -13,7 +13,10 @@ switch($get_param) {
 		$userActionController = new UserController();
 		$position = array();
 		$position['position_left'] = $_POST['position_left'];
-		$position['position_right'] = $_POST['position_right'];
+		$position['position_top'] = $_POST['position_top'];
 		$userActionController->saveSpritePosition($_POST['name'], $position, $_POST['resource']);
 		break;
+    case 'build':
+        $buildController = new BuildController();
+        $buildController->build();
 }

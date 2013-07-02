@@ -20,7 +20,7 @@ class UserController {
 	 */
 	function saveSpritePosition($name, $position, $resource) {
 		$this->_logger->writeLog(1, __CLASS__, __FUNCTION__, 'sprite_position', 
-				json_encode(array("name"=>$name,"position_left"=>$position['position_left']
-						,"position_top"=>$position['position_top'], "resource"=>$resource)));
+				array("name"=>$name,"position_left"=>$position['position_left']
+						,"position_top"=>$position['position_top'], "resource"=>$resource));
 	}
 }
