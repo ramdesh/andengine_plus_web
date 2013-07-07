@@ -20,6 +20,7 @@ class Logger {
 	 * @param String $function The calling function
 	 * @param String $activity Activity which should be logged
 	 * @param array $activity_params Parameters for the logged activity
+     * @return Whether the logging function was successful
 	 */
 	function writeLog($project_id,$class,$function,$activity,$activity_params) {
 		$sequence_query = "SELECT seq FROM project_log_seq WHERE project_id=".$project_id;
@@ -38,10 +39,10 @@ class Logger {
 		
 		$result = $this->_logger_db->insertObject('project_log',$log_object);
 		if ( $result === false ) {
-			echo "Error saving position of sprite:".print_r($this->_logger_db, true);
+			return false;
 		}
 		else {
-			echo "Success saving sprite position";
+			return true;
 		}
 	}
 }

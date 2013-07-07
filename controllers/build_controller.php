@@ -40,6 +40,11 @@ class BuildController {
         }
         $gameElement->appendChild($resources);
 
-        $xmldoc->save("xmloutput/test_project.xml");
+        if ( !$xmldoc->save("xmloutput/test_project.xml") ) {
+            echo "<p>Error occured during XML write</p>";
+        }
+        else {
+            echo "<p>XML written successfully.</p>";
+        }
     }
 }

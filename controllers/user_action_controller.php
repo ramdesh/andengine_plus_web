@@ -19,8 +19,14 @@ class UserController {
 	 * @param unknown $resource
 	 */
 	function saveSpritePosition($name, $position, $resource) {
-		$this->_logger->writeLog(1, __CLASS__, __FUNCTION__, 'sprite_position', 
+		$success = $this->_logger->writeLog(1, __CLASS__, __FUNCTION__, 'sprite_position',
 				array("name"=>$name,"position_left"=>$position['position_left']
 						,"position_top"=>$position['position_top'], "resource"=>$resource));
+        if ( $success ) {
+            echo "<p>Successfully saved sprite position</p>";
+        }
+        else {
+            echo "<p>Error saving sprite position</p>";
+        }
 	}
 }

@@ -39,5 +39,7 @@ function build() {
         url: "http://localhost/public_html/andengine_plus_web/controllers/httprouter.php?function=build",
         type: "POST",
         data: {project_id:1}
+    }).done(function(html) {
+        $('#results').append(html);
     });
 }
