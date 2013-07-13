@@ -39,8 +39,8 @@ class ResourceManager {
 					move_uploaded_file($_FILES["resourceFile"]["tmp_name"],
 					"../resources/" . $_FILES["resourceFile"]["name"]);
 					$this->_logger->writeLog(1, __CLASS__, __FUNCTION__, "resource_upload", 
-							array("file"=>"resources/" . $_FILES["resourceFile"]["name"]));
-					echo "resources/" . $_FILES["resourceFile"]["name"];
+							array("file"=>$_FILES["resourceFile"]["name"]));
+					echo $_FILES["resourceFile"]["name"];
 				}
 			}
 		}
