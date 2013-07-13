@@ -18,5 +18,5 @@ switch($get_param) {
 		break;
     case 'build':
         $buildController = new BuildController();
-        $buildController->build();
+        $buildController->buildGame();
 }

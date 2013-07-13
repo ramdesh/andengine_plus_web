@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+  <resources>
+    <resource resource="resources/sandbag.png" position_left="616.5" position_top="">myImage</resource>
+    <resource resource="resources/sandbag.png" position_left="608.5" position_top="">myImage</resource>
+  </resources>
+</game>

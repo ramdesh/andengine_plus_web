@@ -4,18 +4,17 @@
     <list default="true" id="c55cb663-db4a-4272-81d8-11e1d51f7395" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/andengine_plus_web.js" afterPath="$PROJECT_DIR$/js/andengine_plus_web.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/build_controller.php" afterPath="$PROJECT_DIR$/controllers/build_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/logger.php" afterPath="$PROJECT_DIR$/controllers/logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user_action_controller.php" afterPath="$PROJECT_DIR$/controllers/user_action_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/httprouter.php" afterPath="$PROJECT_DIR$/controllers/httprouter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="andengine_plus_web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373216122690" ignored="false" />
+    <file path="/Dummy.txt" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373711349214" ignored="false" />
     <file path="/logger.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373218196190" ignored="false" />
-    <file path="/index.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1372748906237" ignored="false" />
-    <file path="/build_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373217828051" ignored="false" />
-    <file path="/andengine_plus_web.js" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373217956761" ignored="false" />
-    <file path="/httprouter.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1372749163145" ignored="false" />
+    <file path="/index.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373717731147" ignored="false" />
+    <file path="/build_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373718138397" ignored="false" />
+    <file path="/andengine_plus_web.js" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373717719101" ignored="false" />
+    <file path="/httprouter.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373717952134" ignored="false" />
     <file path="/controllers.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1372749145816" ignored="false" />
     <file path="/user_action_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373218275551" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,16 +39,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="47" selection-start="5403" selection-end="5403" vertical-scroll-proportion="-0.625">
+            <state line="175" column="119" selection-start="5475" selection-end="5475" vertical-scroll-proportion="-24.192308">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build_controller.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="build_controller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="52" selection-start="1774" selection-end="1774" vertical-scroll-proportion="-25.875">
+            <state line="41" column="43" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.6426426">
               <folding />
             </state>
           </provider>
@@ -58,7 +57,7 @@
       <file leaf-file-name="andengine_plus_web.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/andengine_plus_web.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0">
+            <state line="36" column="18" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,16 +66,16 @@
       <file leaf-file-name="logger.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/logger.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="58" selection-start="646" selection-end="646" vertical-scroll-proportion="-9.625">
+            <state line="22" column="58" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_action_controller.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user_action_controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/user_action_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="55" selection-start="881" selection-end="881" vertical-scroll-proportion="0.6167401">
+            <state line="28" column="55" selection-start="881" selection-end="881" vertical-scroll-proportion="-18.307692">
               <folding />
             </state>
           </provider>
@@ -85,7 +84,7 @@
       <file leaf-file-name="httprouter.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/httprouter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="34" selection-start="661" selection-end="661" vertical-scroll-proportion="-12.5">
+            <state line="19" column="49" selection-start="626" selection-end="626" vertical-scroll-proportion="-12.423077">
               <folding />
             </state>
           </provider>
@@ -94,7 +93,7 @@
       <file leaf-file-name="controllers.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/controllers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="225" selection-end="225" vertical-scroll-proportion="-3.75">
+            <state line="6" column="36" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +102,7 @@
       <file leaf-file-name="resource_controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/resource_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="107" vertical-scroll-proportion="0.0">
+            <state line="8" column="33" selection-start="162" selection-end="162" vertical-scroll-proportion="14.961538">
               <folding />
             </state>
           </provider>
@@ -128,20 +127,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/controllers/controllers.php" />
-        <option value="$PROJECT_DIR$/controllers/httprouter.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/controllers/build_controller.php" />
-        <option value="$PROJECT_DIR$/js/andengine_plus_web.js" />
         <option value="$PROJECT_DIR$/controllers/logger.php" />
         <option value="$PROJECT_DIR$/controllers/user_action_controller.php" />
+        <option value="$PROJECT_DIR$/js/andengine_plus_web.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/controllers/httprouter.php" />
+        <option value="$PROJECT_DIR$/controllers/build_controller.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1606" />
-    <option name="height" value="877" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,7 +169,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,14 +243,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andengine_plus_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andengine_plus_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xmloutput" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -290,14 +308,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1606" height="877" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16280566" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16473617" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -373,30 +391,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user_action_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/logger.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="77" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/resource_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="107" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -426,13 +423,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="47" selection-start="5403" selection-end="5403" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/dom_c.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="943" column="20" selection-start="29576" selection-end="29576" vertical-scroll-proportion="0.34545454">
@@ -442,42 +432,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/controllers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="225" selection-end="225" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/httprouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="661" selection-end="661" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/andengine_plus_web.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0">
+        <state line="6" column="36" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/logger.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="58" selection-start="646" selection-end="646" vertical-scroll-proportion="-9.625">
+        <state line="22" column="58" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
+    <entry file="file://$PROJECT_DIR$/controllers/resource_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="52" selection-start="1774" selection-end="1774" vertical-scroll-proportion="-25.875">
+        <state line="8" column="33" selection-start="162" selection-end="162" vertical-scroll-proportion="14.961538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user_action_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="55" selection-start="881" selection-end="881" vertical-scroll-proportion="0.6167401">
+        <state line="28" column="55" selection-start="881" selection-end="881" vertical-scroll-proportion="-18.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="119" selection-start="5475" selection-end="5475" vertical-scroll-proportion="-24.192308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/andengine_plus_web.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="18" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/httprouter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="49" selection-start="626" selection-end="626" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="9" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.8048048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/xmloutput/test_project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="43" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.6426426">
           <folding />
         </state>
       </provider>

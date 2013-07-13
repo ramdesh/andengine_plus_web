@@ -173,7 +173,7 @@ initialize_controllers();
                                             <header>
                                                 <h2>Build and Download APK</h2>
                                             </header>
-                                            <a class="button button-style1" onclick="javascript:build();">Build</a>
+                                            <a class="button button-style1" onclick="javascript:buildGame();">Build</a>
                                         </section>
 									</div>
 									<!-- /Sidebar -->

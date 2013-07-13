@@ -26,7 +26,7 @@ function saveSpritePosition() {
 		var resource_name = $(this).attr('src');
 		var position = $(this).position();
 		$.ajax({
-			url: "http://localhost/public_html/andengine_plus_web/controllers/httprouter.php?function=sprite_save",
+			url: "http://localhost/andengine_plus_web/controllers/httprouter.php?function=sprite_save",
 			type: "POST",
 			data: {name:image_name, resource:resource_name, position_left:position.left, position_top:position.top}
 		}).done(function(html) {
@@ -34,9 +34,9 @@ function saveSpritePosition() {
 		});
 	});
 }
-function build() {
+function buildGame() {
     $.ajax({
-        url: "http://localhost/public_html/andengine_plus_web/controllers/httprouter.php?function=build",
+        url: "http://localhost/andengine_plus_web/controllers/httprouter.php?function=build",
         type: "POST",
         data: {project_id:1}
     }).done(function(html) {
