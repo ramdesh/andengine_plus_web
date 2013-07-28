@@ -54,4 +54,13 @@ class BuildController {
             echo "<p>XML written successfully.</p>";
         }
     }
+    private function build_code() {
+        $xmldoc = new DOMDocument();
+        $xmldoc->load("xmloutput/test_project.xml");
+        $sprites = $xmldoc->getElementsByTagName("sprites");
+        $sprite_list = $sprites->item(0)->childNodes;
+        foreach($sprite_list as $sprite) {
+            
+        }
+    }
 }
