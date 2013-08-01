@@ -5,6 +5,7 @@
  * @author Ramindu
  *
  */
+define('CODE_PATH','../android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java')
 class BuildController {
     var $_build_logger;
     var $_build_db;
@@ -55,12 +56,38 @@ class BuildController {
         }
     }
     private function build_code() {
+        $file_output = '';
+        $file_output .= 'package com.packt.andengine.demo;
+                        import java.io.IOException;
+                        import org.andengine.engine.camera.Camera;
+                        import org.andengine.engine.options.ConfigChooserOptions;
+                        import org.andengine.engine.options.EngineOptions;
+                        import org.andengine.engine.options.ScreenOrientation;
+                        import org.andengine.engine.options.resolutionpolicy.RatioResolutionPolicy;
+                        import org.andengine.entity.scene.Scene;
+                        import org.andengine.entity.sprite.Sprite;
+                        import org.andengine.entity.util.FPSLogger;
+                        import org.andengine.opengl.texture.ITexture;
+                        import org.andengine.opengl.texture.bitmap.AssetBitmapTexture;
+                        import org.andengine.opengl.texture.region.ITextureRegion;
+                        import org.andengine.opengl.texture.region.TextureRegionFactory;
+                        import org.andengine.ui.activity.SimpleBaseGameActivity;
+                        import org.andengine.util.adt.color.Color;
+
+                        import android.view.Display;
+
+
+                        public class MainGameActivity extends SimpleBaseGameActivity {';
+
         $xmldoc = new DOMDocument();
         $xmldoc->load("xmloutput/test_project.xml");
         $sprites = $xmldoc->getElementsByTagName("sprites");
         $sprite_list = $sprites->item(0)->childNodes;
         foreach($sprite_list as $sprite) {
-            
+
         }
+
+        $file_output .= '}';
+        file_put_contents(CODE_PATH, $file_output);
     }
 }

@@ -1,3 +1,5 @@
+package com.example.andengineplusweb;
+
 import org.andengine.engine.camera.Camera;
 import org.andengine.engine.options.ConfigChooserOptions;
 import org.andengine.engine.options.EngineOptions;
