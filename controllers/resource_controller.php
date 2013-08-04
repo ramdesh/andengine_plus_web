@@ -54,8 +54,8 @@ class ResourceManager {
 	 */
 	function serve_resources() {
 		foreach(glob('resources/*.*') as $filename){
-			
-			echo '<img src="'.$filename.'" class="draggable" id="'.$this->generate_resourceid().'" alt="myImage" />';
+			$id = $this->generate_resourceid();
+			echo '<img src="'.$filename.'" class="draggable" id="'.$id.'" alt="'.$id.'" />';
 		}
 	}
 	/**
@@ -63,7 +63,7 @@ class ResourceManager {
 	 * @return string
 	 */
 	function generate_resourceid() {
-		$imgid = 'img-'.rand();
+		$imgid = 'sprite-'.rand();
 		$this->_resource_ids[] = $imgid;
 		return $imgid;
 	}

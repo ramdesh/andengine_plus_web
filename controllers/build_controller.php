@@ -5,7 +5,7 @@
  * @author Ramindu
  *
  */
-define('CODE_PATH','../android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java')
+define('CODE_PATH','../android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java');
 class BuildController {
     var $_build_logger;
     var $_build_db;
@@ -81,6 +81,11 @@ class BuildController {
 
         $xmldoc = new DOMDocument();
         $xmldoc->load("xmloutput/test_project.xml");
+        $resources = $xmldoc->getElementsByTagName("resources");
+        $resource_list = $resources->item(0)->childNodes;
+        foreach($resource_list as $resource) {
+
+        }
         $sprites = $xmldoc->getElementsByTagName("sprites");
         $sprite_list = $sprites->item(0)->childNodes;
         foreach($sprite_list as $sprite) {

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <game>
   <resources>
-    <resource resource="resources/sandbag.png" position_left="616.5" position_top="">myImage</resource>
-    <resource resource="resources/sandbag.png" position_left="608.5" position_top="">myImage</resource>
+    <resource>resources/sandbag.png</resource>
+    <resource>resources/traffic_cone.png</resource>
   </resources>
+  <sprites>
+    <sprite resource="resources/sandbag.png" position_left="539" position_top="287.640625">sprite-1861442134</sprite>
+    <sprite resource="resources/traffic_cone.png" position_left="631" position_top="449.640625">sprite-1072467011</sprite>
+  </sprites>
 </game>
