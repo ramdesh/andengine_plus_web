@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <game>
   <resources>
-    <resource>resources/sandbag.png</resource>
-    <resource>resources/traffic_cone.png</resource>
+    <resource>sandbag.png</resource>
+    <resource>traffic_cone.png</resource>
   </resources>
   <sprites>
-    <sprite resource="resources/sandbag.png" position_left="539" position_top="287.640625">sprite-1861442134</sprite>
-    <sprite resource="resources/traffic_cone.png" position_left="631" position_top="449.640625">sprite-1072467011</sprite>
+    <sprite resource="sandbag.png" position_left="563" position_top="306.640625">sprite-1148562093</sprite>
+    <sprite resource="traffic_cone.png" position_left="594" position_top="496.640625">sprite-1857782972</sprite>
   </sprites>
 </game>

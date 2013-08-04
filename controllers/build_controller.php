@@ -15,6 +15,7 @@ class BuildController {
     }
     public function buildGame() {
         $this->build_xml();
+        $this->build_code();
     }
     private function build_xml() {
         $query = "SELECT *
@@ -77,22 +78,71 @@ class BuildController {
                         import android.view.Display;
 
 
-                        public class MainGameActivity extends SimpleBaseGameActivity {';
+                        public class MainGameActivity extends SimpleBaseGameActivity {
+                            private float cameraWidth;
+                            private float cameraHeight;';
 
-        $xmldoc = new DOMDocument();
-        $xmldoc->load("xmloutput/test_project.xml");
-        $resources = $xmldoc->getElementsByTagName("resources");
+        $xml = file_get_contents('xmloutput/test_project.xml');
+        $game_element = new SimpleXMLElement($xml);
+        /*$resources = $xmldoc->getElementsByTagName("resources");
         $resource_list = $resources->item(0)->childNodes;
         foreach($resource_list as $resource) {
 
+        }*/
+        //Initializing sprite variables
+        foreach($game_element->sprites->sprite as $sprite) {
+            $file_output .= 'private ITexture m'.$sprite.'Texture;';
+            $file_output .= 'private ITextureRegion m'.$sprite.'TextureRegion;';
+            $file_output .= 'private Sprite '.$sprite.';';
         }
-        $sprites = $xmldoc->getElementsByTagName("sprites");
-        $sprite_list = $sprites->item(0)->childNodes;
-        foreach($sprite_list as $sprite) {
+        /*---------------------------------------------onCreateEngineOptions start-------------------------------------------*/
+        $file_output .= 'public EngineOptions onCreateEngineOptions() {
+		                    final Display display = getWindowManager().getDefaultDisplay();
+                            cameraWidth = display.getWidth();
+                            cameraHeight = display.getHeight();
 
+                            final Camera camera = new Camera(0, 0, cameraWidth, cameraHeight);
+
+                            final EngineOptions engineOptions = new EngineOptions(true,
+                                    ScreenOrientation.LANDSCAPE_SENSOR, new RatioResolutionPolicy(
+                                            cameraWidth, cameraHeight), camera);
+                            final ConfigChooserOptions configChooserOptions = engineOptions
+                                    .getRenderOptions().getConfigChooserOptions();
+                            configChooserOptions.setRequestedRedSize(8);
+                            configChooserOptions.setRequestedGreenSize(8);
+                            configChooserOptions.setRequestedBlueSize(8);
+                            configChooserOptions.setRequestedAlphaSize(8);
+                            configChooserOptions.setRequestedDepthSize(16);
+                            return engineOptions;
+	                    }';
+        /*---------------------------------------------onCreateEngineOptions end-------------------------------------------*/
+        /*---------------------------------------------onCreateResources start---------------------------------------------*/
+        $file_output .= 'public void onCreateResources throws IOException {';
+        foreach($game_element->sprites->sprite as $sprite) {
+            $file_output .= 'm'.$sprite.'Texture = new AssetBitmapTexture(getTextureManager(), getAssets(),
+				                "gfx/'.$sprite['resource'].'");
+                            m'.$sprite.'TextureRegion = TextureRegionFactory.extractFromTexture(m'.$sprite.'Texture);
+                            m'.$sprite.'Texture.load();';
         }
-
         $file_output .= '}';
-        file_put_contents(CODE_PATH, $file_output);
+        /*---------------------------------------------onCreateResources end-------------------------------------------*/
+        /*---------------------------------------------onCreateScene start-----------------------------------------------*/
+        $file_output .= 'public Scene onCreateScene() {
+                            mEngine.registerUpdateHandler(new FPSLogger());
+
+                            Scene scene = new Scene();
+                            scene.getBackground().setColor(Color.BLACK);';
+        foreach($game_element->sprites->sprite as $sprite) {
+            $file_output .= $sprite.' = new Sprite(200, 200,
+				            m'.$sprite.'TextureRegion, this.getVertexBufferObjectManager());';
+            $file_output .= 'scene.attachChild('.$sprite.');';
+        }
+        $file_output .= '}';
+        /*---------------------------------------------onCreateScene end-----------------------------------------------*/
+        $file_output .= '}';
+        if (!file_put_contents(CODE_PATH, $file_output)) {
+            echo "<p>Code save failed</p>";
+        }
+        else echo "<p>Code saved.</p>";
     }
 }

@@ -2,60 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55cb663-db4a-4272-81d8-11e1d51f7395" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/libs/andengine.jar" afterPath="$PROJECT_DIR$/android_build/default/libs/andengine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/libs/andengine.jar" afterPath="$PROJECT_DIR$/android_build/testproject/libs/andengine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/libs/android-support-v4.jar" afterPath="$PROJECT_DIR$/android_build/default/libs/android-support-v4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/libs/android-support-v4.jar" afterPath="$PROJECT_DIR$/android_build/testproject/libs/android-support-v4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/ic_launcher-web.png" afterPath="$PROJECT_DIR$/android_build/default/ic_launcher-web.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/ic_launcher-web.png" afterPath="$PROJECT_DIR$/android_build/testproject/ic_launcher-web.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/default/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/default/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/default/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/default/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/testproject/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/testproject/res/drawable-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/testproject/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android_build/testproject/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android_build/default/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android_build/testproject/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/src/com/example/andengineplusweb/MainGameActivity.java" afterPath="$PROJECT_DIR$/android_build/default/src/com/example/andengineplusweb/MainGameActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java" afterPath="$PROJECT_DIR$/android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/layout/activity_main_game.xml" afterPath="$PROJECT_DIR$/android_build/default/res/layout/activity_main_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/layout/activity_main_game.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/layout/activity_main_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/andengine_plus_web.js" afterPath="$PROJECT_DIR$/js/andengine_plus_web.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/build_controller.php" afterPath="$PROJECT_DIR$/controllers/build_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values/dimens.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values-sw600dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values-sw720dp-land/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values/dimens.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values-sw600dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values-sw720dp-land/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/bin/jarlist.cache" afterPath="$PROJECT_DIR$/android_build/default/bin/jarlist.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/bin/jarlist.cache" afterPath="$PROJECT_DIR$/android_build/testproject/bin/jarlist.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/menu/main_game.xml" afterPath="$PROJECT_DIR$/android_build/default/res/menu/main_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/menu/main_game.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/menu/main_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/resource_controller.php" afterPath="$PROJECT_DIR$/controllers/resource_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values/strings.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values/strings.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values/styles.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/default/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/android_build/default/res/values-v14/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values/styles.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android_build/testproject/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/android_build/testproject/res/values-v14/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/xmloutput/test_project.xml" afterPath="$PROJECT_DIR$/controllers/xmloutput/test_project.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/user_action_controller.php" afterPath="$PROJECT_DIR$/controllers/user_action_controller.php" />
     </list>
     <ignored path="andengine_plus_web.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1375601974420" ignored="false" />
     <file path="/logger.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373218196190" ignored="false" />
     <file path="/index.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373717731147" ignored="false" />
-    <file path="/build_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1375602141578" ignored="false" />
+    <file path="/build_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1375611759399" ignored="false" />
     <file path="/andengine_plus_web.js" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373717719101" ignored="false" />
     <file path="/httprouter.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373717952134" ignored="false" />
     <file path="/controllers.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1372749145816" ignored="false" />
-    <file path="/user_action_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1373218275551" ignored="false" />
+    <file path="/user_action_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1375610963572" ignored="false" />
     <file path="/MainGameActivity.java" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1375384235722" ignored="false" />
     <file path="/resource_controller.php" changelist="c55cb663-db4a-4272-81d8-11e1d51f7395" time="1375602432661" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,19 +52,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build_controller.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="build_controller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="106" selection-start="222" selection-end="222" vertical-scroll-proportion="-4.375">
+            <state line="126" column="26" selection-start="6562" selection-end="6562" vertical-scroll-proportion="0.44444445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_project.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainGameActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="74" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_project.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/xmloutput/test_project.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.21262887">
+            <state line="11" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,7 +100,7 @@
       <file leaf-file-name="user_action_controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/user_action_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="896" selection-end="896" vertical-scroll-proportion="-19.375">
+            <state line="22" column="32" selection-start="560" selection-end="560" vertical-scroll-proportion="-13.75">
               <folding />
             </state>
           </provider>
@@ -174,15 +144,15 @@
       <list>
         <option value="$PROJECT_DIR$/controllers/controllers.php" />
         <option value="$PROJECT_DIR$/controllers/logger.php" />
-        <option value="$PROJECT_DIR$/controllers/user_action_controller.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controllers/httprouter.php" />
         <option value="$PROJECT_DIR$/android_build/default/src/com/example/andengineplusweb/MainGameActivity.java" />
         <option value="$PROJECT_DIR$/android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java" />
-        <option value="$PROJECT_DIR$/controllers/build_controller.php" />
         <option value="$PROJECT_DIR$/js/andengine_plus_web.js" />
         <option value="$PROJECT_DIR$/controllers/resource_controller.php" />
         <option value="$PROJECT_DIR$/controllers/xmloutput/test_project.xml" />
+        <option value="$PROJECT_DIR$/controllers/user_action_controller.php" />
+        <option value="$PROJECT_DIR$/controllers/build_controller.php" />
       </list>
     </option>
   </component>
@@ -533,14 +503,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/andengine_plus_web.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1121674" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/db_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -576,24 +538,9 @@
         <state line="67" column="1" selection-start="2126" selection-end="2126" vertical-scroll-proportion="1.3842975" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="108" column="33" selection-start="3214" selection-end="3214" vertical-scroll-proportion="47.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="106" selection-start="222" selection-end="222" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
@@ -605,23 +552,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user_action_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="896" selection-end="896" vertical-scroll-proportion="-19.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/logger.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="7" selection-start="651" selection-end="651" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/andengine_plus_web.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="125" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -633,9 +566,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/andengine_plus_web.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="125" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user_action_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="560" selection-end="560" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/xmloutput/test_project.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.21262887">
+        <state line="11" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1098" column="9" selection-start="32412" selection-end="32412" vertical-scroll-proportion="0.8683128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android_build/testproject/src/com/example/andengineplusweb/MainGameActivity.java">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="74" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/build_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="26" selection-start="6562" selection-end="6562" vertical-scroll-proportion="0.44444445">
           <folding />
         </state>
       </provider>

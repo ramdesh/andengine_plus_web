@@ -19,6 +19,8 @@ class UserController {
 	 * @param unknown $resource
 	 */
 	function saveSpritePosition($name, $position, $resource) {
+        $rString = explode('/',$resource);
+        $resource = $rString[1];
 		$success = $this->_logger->writeLog(1, __CLASS__, __FUNCTION__, 'sprite_position',
 				array("name"=>$name,"position_left"=>$position['position_left']
 						,"position_top"=>$position['position_top'], "resource"=>$resource));
